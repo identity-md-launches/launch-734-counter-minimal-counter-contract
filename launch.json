@@ -1,0 +1,10 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "Counter",
+      "constructorArgs": []
+    }
+  ],
+  "notes": "Contracts-only launch of a single application contract, Counter (src/Counter.sol), for Ethereum mainnet. No token, pool, reward distributor, ETH funding or initialization call. Counter has no constructor and takes no constructor arguments, so constructorArgs is empty and neither $owner nor any $contract reference is used. The contract has no owner, no admin functions, no fees and holds no funds: it has no payable function, receive or fallback. State is one uint256 count starting at zero. increment() is permissionless, adds one with checked arithmetic and emits Incremented(address indexed caller, uint256 newCount); count() reads the value. msg.sender in the constructor is the factory, which gains no privilege because the contract has no privileged role. These notes are explanatory only and are not deployment authority; the independent security review, attestation and deployment checks are separate steps."
+}
