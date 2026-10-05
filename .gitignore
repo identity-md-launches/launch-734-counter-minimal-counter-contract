@@ -1,0 +1,5 @@
+out/
+cache/
+broadcast/
+# stray local clone; the vendored copy is lib/forge-std-1.9.7
+/lib/forge-std/
